@@ -34,7 +34,7 @@ export default function TextForm(props) {
           <h1>{props.heading}</h1>
           <textarea
             className="form-control border-dark rounded"
-            style={{backgroundColor:props.mode === 'dark' ? 'black' : 'white',color:'white'}}
+            style={{backgroundColor:props.mode === 'dark' ? 'black' : 'white',color:props.mode === 'dark' ? 'white' : 'black'}}
             id="myText"
             rows="10"
             value={text}
