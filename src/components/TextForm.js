@@ -26,7 +26,6 @@ export default function TextForm(props) {
   const handleOnChange = (event) => {
     setText(event.target.value);
   };
-  const trimedText = text.trim()
   return (
     <div className={`container text-${props.mode === 'dark' ? 'white' : 'black'}`}>
       <div className="container my-3 ">
@@ -74,7 +73,7 @@ export default function TextForm(props) {
       </div>
       <div className="container">
         <h4>Your text summary 🔎...</h4>
-        <p>{trimedText.length === 0 ? 0 : trimedText.split(' ').length } words and {trimedText.length} characters</p>
+        <p>{text.length === 0 ? 0 : text.split(' ').filter(word => word).length} words and {text.split(' ').filter(word => word).join(' ').trim().length} characters</p>
       </div>
     </div>
   );
