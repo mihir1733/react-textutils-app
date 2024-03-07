@@ -2,6 +2,8 @@
 
 TextUtils is a web-based tool designed to simplify text manipulation tasks. It provides various features to help users convert, analyze, and manage text effectively.
 
+live- https://react-textutils-app-0xsd.onrender.com/
+
 ## Setup Instructions
 
 1. **Clone Repository**: First, clone the repository to your local machine.
